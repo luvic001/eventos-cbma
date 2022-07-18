@@ -1,0 +1,61 @@
+$danger: #a20
+
+form
+  p
+    &.title
+      margin-bottom: 15px
+      position: relative
+      font-weight: 700
+      line-height: 20px
+      &.required
+        &:after
+          content: '*'
+          margin-left: 4px
+          color: $danger
+    &.field-error-alert
+      color: $danger
+      +font-size(12px)
+      font-weight: 700
+
+    &.subtitle
+      font-weight: 500
+      +font-size(14px)
+  
+  label.field-error
+    textarea, input
+      border-color: $danger
+
+  .input-text
+    width: 100%
+    margin-bottom: 1.5rem
+    label
+      width: 100%
+      input, textarea
+        +font-size(18px)
+        margin-bottom: 5px
+        display: block
+        width: 100%
+        padding: 14px 8px
+        font-family: $font-default
+        &[type="number"]
+          text-align: center
+      
+      textarea
+        height: 140px
+  
+  .input-select
+    label
+      width: 100%
+      select
+        width: 100%
+        padding: 14px 8px
+
+  .input-submit
+    button
+      border: 0
+      padding: 14px 20px
+      background-color: #777
+      color: $branco
+      font-weight: 700
+      &:hover
+        +filter(brightness(0.9))
