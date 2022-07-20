@@ -29,7 +29,8 @@ global $TEMPLATE_DIRECTORY_URI;
   <script src="<?= $TEMPLATE_DIRECTORY_URI ?>/js/jQuery.min.js"></script>
   <script src="<?= $TEMPLATE_DIRECTORY_URI ?>/js/jquery-ui.min.js"></script>
   <script src="<?= $TEMPLATE_DIRECTORY_URI ?>/js/bootstrap.min.js"></script>
-  <script src="<?= $TEMPLATE_DIRECTORY_URI ?>/js/isotope.pkgd.min.js"></script>
+  <?php /* <script src="<?= $TEMPLATE_DIRECTORY_URI ?>/js/isotope.pkgd.min.js"></script> */ ?>
+  <script src="<?= $TEMPLATE_DIRECTORY_URI ?>/js/fontawesome-all.min.js"></script>
 
   <link href="<?= $TEMPLATE_DIRECTORY_URI ?>/css/jquery-ui.min.css" rel="stylesheet">
 

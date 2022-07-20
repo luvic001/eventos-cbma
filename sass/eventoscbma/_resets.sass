@@ -1,0 +1,43 @@
+html, body, main.site-content
+  height: 100%
+
+a.btn-site
+  display: block
+  width: 100%
+  max-width: 280px
+  text-align: center
+  text-decoration: none
+  font-family: $font-default
+  font-weight: 700
+  background-color: $azul
+  color: $branco
+  +border-radius(4px)
+  border: 1px solid $azul
+  padding: 16px 5px
+  +font-size(14px)
+  +default_transition()
+  position: relative
+  svg
+    +font-size(18px)
+    position: absolute
+    top: 0
+    bottom: 0
+    margin: auto
+  &.white-button
+    background-color: $branco
+    color: $verde-claro
+    border-color: $branco
+    &:hover
+      +filter(brightness(.9))
+  &.transparent-button
+    background-color: $transparent
+    color: $branco
+    border-color: $branco
+    &:hover
+      background-color: $branco
+      color: $verde-claro
+      +filter(brightness(.9))
+
+  &.icon-left
+    svg
+      left: 15px

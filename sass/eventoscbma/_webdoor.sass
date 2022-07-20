@@ -1,0 +1,83 @@
+.homepage-webdoor
+  height: 100%
+  min-height: 650px
+  padding-top: 79px
+  display: flex
+  align-items: center
+  position: relative
+  background-size: cover
+  +breakpoint(sm)
+    max-height: 850px
+    padding-top: 84px
+  
+  .webdoor-content
+    background-color: rgba($verde-black, .68)
+    display: block
+    padding: 20px 1rem 40px
+    +breakpoint(sm)
+      padding: 50px 1rem 60px
+    .site-logo
+      text-align: center
+      h2
+        color: $branco
+        font-weight: 500
+        +font-size(90px)
+        line-height: 120px
+        +breakpoint(sm)
+          +font-size(120px)
+          line-height: 150px
+        b
+          font-weight: 900
+      p
+        color: $branco
+        letter-spacing: 4px
+        +font-size(12px)
+        +breakpoint(sm)
+          +font-size(18px)
+        
+      
+      &:after
+        content: ''
+        display: block
+        width: 70px
+        background-color: $branco
+        position: relative
+        height: 1px
+        margin: 28px auto
+        +breakpoint(sm)
+          margin: 40px auto 30px
+
+    p.event-date
+      text-align: center
+      font-weight: 700
+      color: $branco
+      margin-bottom: 40px
+      +font-size(20px)
+      +breakpoint(sm)
+        +font-size(27px)
+    
+    .webdoor-links
+      display: flex
+      justify-content: center
+      flex-wrap: wrap
+      +breakpoint(sm)
+        flex-wrap: nowrap
+      a
+        margin-bottom: 10px
+        +breakpoint(sm)
+          margin-bottom: 0
+          margin-right: 50px
+        &:last-child
+          margin-right: 0
+
+  .scrolldown
+    position: absolute
+    margin: auto
+    left: 0
+    right: 0
+    bottom: 10px
+    width: 30px
+    height: 30px
+    svg
+      width: 100%
+      height: auto

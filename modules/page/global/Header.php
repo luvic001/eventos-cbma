@@ -12,7 +12,9 @@ get_modules('Header-megamenu', 'page/global');
     <div class="row align-items-center justify-content-between">
       <div class="col-xl-3 col-10">
         <div class="site-logo">
-          <h1><b>RJ</b>AW | RIO ARBITRATION WEEK</h1>
+          <a href="<?= site_url() ?>" class="no-decoration" title="RJAW | RIO ARBITRATION WEEK">
+            <h1><b>RJ</b>AW | RIO ARBITRATION WEEK</h1>
+          </a>
         </div>
       </div>
       <div class="col-xl-9 d-none d-xl-flex justify-content-end">
