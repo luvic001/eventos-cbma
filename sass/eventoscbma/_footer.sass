@@ -1,0 +1,38 @@
+footer.site-footer
+  background-color: $verde-escuro
+  padding: 70px 0
+  .site-logo
+    margin-bottom: 70px
+    text-align: center
+    h2
+      color: $branco
+      font-weight: 400
+      white-space: nowrap
+      +font-size(16px)
+      +breakpoint(sm)
+        +font-size(26px)
+      b
+        font-weight: 900
+
+  p
+    color: $branco
+    +font-size(14px)
+    display: flex
+    justify-content: center
+    img
+      margin-left: 5px
+
+  .info-footer
+    margin-bottom: 2rem
+    +breakpoint(md)
+      margin-bottom: 0
+  
+    &.redes-sociais
+      ul
+        display: flex
+        li
+          margin-right: 25px
+          &:last-child
+            margin-right: 0
+          a
+            color: $branco
