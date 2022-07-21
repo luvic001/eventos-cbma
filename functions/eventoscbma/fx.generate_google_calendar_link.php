@@ -10,7 +10,7 @@ function generate_google_calendar_link($name, $begin, $end, $location, $details 
     	$current = $arg_list[$i];
     	if(is_int($current)) {
     		$t = new DateTime('@' . $current, new DateTimeZone('UTC'));
-        $t->add(new DateInterval('PT' . 180 . 'M'));
+        $t->add(new DateInterval('PT' . 0 . 'M'));
     		$current = $t->format('Ymd\THis\Z');
     		unset($t);
     	}
