@@ -17,11 +17,11 @@ if (!defined('PATH')) exit;
           <h2>SOBRE O RIO ARTITRATION WEEK</h2>
         </div>
         <div class="editor-content">
-          <p>The São Paulo Arbitration Week (SPAW) is a collaborative event conceived as an organized calendar for law firms, universities, associations and institutions to promote events in a productive environment in benefit of the development of ADRs.</p>
-          <p>The event is an opportunity for the ever-growing arbitration community in São Paulo to discuss pressing issues and to exchange experiences with foreign practitioners. </p>
-          <p>São Paulo has experienced an unprecedented growth in ADRs. Friendly Courts, state-of-the-art infrastructure and a demanding market forged São Paulo as a natural hub for International Arbitration. </p>
-          <p>Therefore, and considering the wide range of events happening in October connected to the subject, SPAWs role is to facilitate and gather all the information concerning these events. </p>
-          <p>An opportunity such as the São Paulo Arbitration Week could not be missed.</p>
+          <p>A Rio de Janeiro Arbitration Week (RJAW) é um evento colaborativo promovido por acadêmicos, provedores de ADR, escritórios de advocacia e associações com o objetivo de promover a cultura de ADR nacional e internacionalmente.</p>
+          <p>A semana e os eventos são uma oportunidade única para compreender e discutir o ecossistema de ADR local e internacional. A RJAW também está aberta para eventos sobre temas afins.</p>
+          <p>O Rio de Janeiro é a porta de entrada do Brasil. Sendo assim, é um polo de negócios e discussões de alto nível.</p>
+          <p>A RJAW tem como missão permitir que qualquer pessoa ou entidade envie sua proposta de evento bem como ser um ponto de encontro para a Comunidade de ADR de todo o mundo.</p>
+          <p>Todos convidados. Bem-vindos ao Rio!</p>
           <a href="#" class="btn-site icon-right mt-5">
             INSCREVA O SEU EVENTO
             <i class="fas fa-arrow-right"></i>
