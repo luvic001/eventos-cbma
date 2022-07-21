@@ -40,5 +40,5 @@ $date_end = new Datetime($data->end);
 $date_start->add(new DateInterval('PT' . 180 . 'M'));
 $date_end->add(new DateInterval('PT' . 180 . 'M'));
 
-$event = new ICS ( $date_start->format('Y-m-d H:i:s'), $date_end->format('Y-m-d H:i:s') , $data->name , $data->details, strip_tags($data->local));
+$event = new ICS ( $date_start->format('Y-m-d H:i:s'), $date_end->format('Y-m-d H:i:s') , $data->name , strip_tags($data->details), strip_tags($data->local));
 $event->show();
