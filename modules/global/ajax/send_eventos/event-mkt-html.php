@@ -3,7 +3,7 @@
 if (!defined('PATH')) exit;
 global $fields, $additional_comment;
 
-foreach ($fields as $field) {
+foreach ($fields as $field => $is_required) {
   $$field = escapestr($_POST[$field]);
 }
 
@@ -41,18 +41,21 @@ foreach ($fields as $field) {
       </tr>
       <tr>
         <td style="background-color: #ffffff; padding: 20px 30px;">
-          <p style="font-family: Arial, Helvetica, sans-serif;"><b>Nome do evento:</b> <?= $event_name ?></p>
-          <p style="font-family: Arial, Helvetica, sans-serif;"><b>Contato na organização:</b> <?= $event_organization_contact_first_name ?> <?= $event_organization_contact_last_name ?></p>
-          <p style="font-family: Arial, Helvetica, sans-serif;"><b>E-mail:</b> <?= $event_organization_contact_email ?></p>
-          <p style="font-family: Arial, Helvetica, sans-serif;"><b>Instituições Organizadoras:</b> <?= $event_organization_instituitions ?></p>
-          <p style="font-family: Arial, Helvetica, sans-serif;"><b>Data inicial do Evento:</b> <?= $event_start_date ?></p>
-          <p style="font-family: Arial, Helvetica, sans-serif;"><b>Data final do Evento:</b> <?= $event_end_date ?></p>
-          <p style="font-family: Arial, Helvetica, sans-serif;"><b>Horário Inicial:</b> <?= $event_start_time_hour ?>:<?= $event_start_time_minutes ?> <?= $event_start_time_ampm ?></p>
-          <p style="font-family: Arial, Helvetica, sans-serif;"><b>Horário Final:</b> <?= $event_end_time_hour ?>:<?= $event_end_time_minutes ?> <?= $event_end_time_ampm ?></p>
-          <p style="font-family: Arial, Helvetica, sans-serif;"><b>Link para inscrição/cadastro do evento:</b> <?= $event_link ?></p>
-          <p style="font-family: Arial, Helvetica, sans-serif;"><b>Taxas de inscrição/evento gratuito:</b> <?= $event_price ?></p>
-          <p style="font-family: Arial, Helvetica, sans-serif;"><b>Palestrantes, moderadores e programação do evento (você pode inserir o link para o programa) Consulte as regras para obter mais informações sobre nossas diretrizes de representação:</b><br/> <?= $event_organization_environment ?></p>
-          <p style="font-family: Arial, Helvetica, sans-serif;"><b>Quaisquer informações adicionais:</b><br/> <?= $additional_comment ?: '-' ?></p>
+          <p style="font-family: Arial, Helvetica, sans-serif;"><b>NOME DO EVENTO:</b> <br/> <?= $event_name ?></p>
+          <p style="font-family: Arial, Helvetica, sans-serif;"><b>NOME DO RESPONSÁVEL PELO EVENTO:</b><br/> <?= $event_organization_contact_name ?></p>
+          <p style="font-family: Arial, Helvetica, sans-serif;"><b>E-MAIL DO RESPONSÁVEL PELO EVENTO:</b><br/> <?= $event_organization_contact_email ?></p>
+          <p style="font-family: Arial, Helvetica, sans-serif;"><b>CELULAR DO RESPONSÁVEL PELO EVENTO:</b><br/> <?= $event_organization_contact_phone ?></p>
+          <p style="font-family: Arial, Helvetica, sans-serif;"><b>NOME DAS ENTIDADES ORGANIZADORAS DO EVENTO:</b><br/> <?= $event_organization_instituitions ?></p>
+          <p style="font-family: Arial, Helvetica, sans-serif;"><b>DATA DE INÍCIO:</b> <?= $event_start_date ?></p>
+          <p style="font-family: Arial, Helvetica, sans-serif;"><b>DATA DE TÉRMINO:</b> <?= $event_end_date ?></p>
+          <p style="font-family: Arial, Helvetica, sans-serif;"><b>HORÁRIO DE INÍCIO:</b> <?= $event_start_time ?></p>
+          <p style="font-family: Arial, Helvetica, sans-serif;"><b>HORÁRIO DE TÉRMINO:</b> <?= $event_end_time ?></p>
+          <p style="font-family: Arial, Helvetica, sans-serif;"><b>VALOR DOS INGRESSOS:</b> <br/> <?= $event_price_details ?: 'Evento Gratuito' ?></p>
+          <p style="font-family: Arial, Helvetica, sans-serif;"><b>LINK DO EVENTO:</b><br/> <?= $event_link ?: '-' ?></p>
+          <p style="font-family: Arial, Helvetica, sans-serif;"><b>ENDEREÇO DO EVENTO:</b><br/> <?= $event_local ?: '-' ?></p>
+          <p style="font-family: Arial, Helvetica, sans-serif;"><b>LINK PARA SE CADASTRAR NO EVENTO:</b><br/> <?= $event_registration_link ?: '-' ?></p>
+          <p style="font-family: Arial, Helvetica, sans-serif;"><b>LISTA DE PALESTRANTES DO EVENTO:</b><br/> <?= $event_organization_environment ?></p>
+          <p style="font-family: Arial, Helvetica, sans-serif;"><b>INFORMAÇÕES GERAIS SOBRE O EVENTO:</b><br/> <?= $additional_comment ?: '-' ?></p>
         </td>
       </tr>
     </tbody>

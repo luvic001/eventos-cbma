@@ -8,36 +8,26 @@ if (!defined('PATH')) exit;
 
   <input type="hidden" name="action" value="send_eventos">
 
+  <p style="color: #ffffff; font-size: 12px;" class="mb-3"><b>*</b> Campos obrigatórios</p>
+
   <div class="row">
 
-    <div class="col-md-6">
+    <div class="col-12">
       <div class="input-text">
         <label for="event_name">
-          <p class="title required">Nome do evento</p>
+          <p class="title required">NOME DO EVENTO</p>
           <input type="text" name="event_name" id="event_name" required>
         </label>
       </div>
     </div>
-    <div class="col-md-6"></div>
-
 
     <div class="col-12">
-      <p class="title required">Contato na organização</p>
+      <p class="title required">NOME DO RESPONSÁVEL PELO EVENTO</p>
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-12">
           <div class="input-text">
-            <label for="event_organization_contact_first_name">
-              <input type="text" name="event_organization_contact_first_name" id="event_organization_contact_first_name" required>
-              <p class="subtitle">Nome</p>
-            </label>
-          </div>
-        </div>
-
-        <div class="col-md-6">
-          <div class="input-text">
-            <label for="event_organization_contact_last_name">
-              <input type="text" name="event_organization_contact_last_name" id="event_organization_contact_last_name" required>
-              <p class="subtitle">Sobrenome</p>
+            <label for="event_organization_contact_name">
+              <input type="text" name="event_organization_contact_name" id="event_organization_contact_name" required>
             </label>
           </div>
         </div>
@@ -48,8 +38,17 @@ if (!defined('PATH')) exit;
     <div class="col-md-6">
       <div class="input-text">
         <label for="event_organization_contact_email">
-          <p class="title required">E-mail</p>
+          <p class="title required">E-MAIL DO RESPONSÁVEL PELO EVENTO</p>
           <input type="email" name="event_organization_contact_email" id="event_organization_contact_email" required>
+        </label>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="input-text">
+        <label for="event_organization_contact_phone">
+          <p class="title required">CELULAR DO RESPONSÁVEL PELO EVENTO</p>
+          <input type="tel" mask="cel" maxlength="15" name="event_organization_contact_phone" id="event_organization_contact_phone" required>
         </label>
       </div>
     </div>
@@ -59,128 +58,117 @@ if (!defined('PATH')) exit;
     <div class="col-12">
       <div class="input-text">
         <label for="event_organization_instituitions">
-          <p class="title required">Instituições Organizadoras</p>
+          <p class="title required">NOME DAS ENTIDADES ORGANIZADORAS DO EVENTO</p>
           <textarea name="event_organization_instituitions" id="event_organization_instituitions" required></textarea>
         </label>
       </div>
     </div>
 
-    <div class="col-md-3 col-6">
+    <div class="col-lg-3 col-6">
       <div class="input-text">
         <label for="event_start_date">
-          <p class="title required">Data inicial do Evento</p>
+          <p class="title required">DATA DE INÍCIO</p>
           <input type="text" name="event_start_date" id="event_start_date" required class="datepicker">
         </label>
       </div>
     </div>
 
-    <div class="col-md-9 col-6"></div>
-
-    <div class="col-md-3 col-6">
+    <div class="col-lg-3 col-6">
       <div class="input-text">
         <label for="event_end_date">
-          <p class="title required">Data final do Evento</p>
+          <p class="title required">DATA DE TÉRMINO</p>
           <input type="text" name="event_end_date" id="event_end_date" required class="datepicker">
         </label>
       </div>
     </div>
 
-    <div class="col-md-9 col-6"></div>
+    <div class="col-12"></div>
 
-    <div class="col-lg-4 col-md-5 col-8">
-      <p class="title required">Horário Inicial</p>
+    <div class="col-lg-3 col-6">
+      <p class="title required">HORÁRIO DE INÍCIO</p>
       <div class="row">
-        <div class="col-4">
+        <div class="col-12">
           <div class="input-text">
-            <label for="event_start_time_hour">
-              <input type="number" min="0" max="12" name="event_start_time_hour" id="event_start_time_hour" required>
-              <p class="subtitle align-center">HH</p>
-            </label>
-          </div>
-        </div>
-        <div class="col-4">
-          <div class="input-text">
-            <label for="event_start_time_minutes">
-              <input type="number" min="0" max="59" name="event_start_time_minutes" id="event_start_time_minutes" required>
-              <p class="subtitle align-center">MM</p>
-            </label>
-          </div>
-        </div>
-        <div class="col-4">
-          <div class="input-select">
-            <label for="event_start_time_ampm">
-              <select name="event_start_time_ampm" id="event_start_time_ampm">
-                <option value="am" selected>AM</option>
-                <option value="pm">PM</option>
-              </select>
+            <label for="event_start_time">
+              <input type="time" placeholder="HH:MM" name="event_start_time" id="event_start_time" required>
             </label>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="col-12"></div>
-
-    <div class="col-lg-4 col-md-5 col-8">
-      <p class="title required">Horário final</p>
+    <div class="col-lg-3 col-6">
+      <p class="title required">HORÁRIO DE TÉRMINO</p>
       <div class="row">
-        <div class="col-4">
+        <div class="col-12">
           <div class="input-text">
-            <label for="event_end_time_hour">
-              <input type="number" min="0" max="12" name="event_end_time_hour" id="event_end_time_hour" required>
-              <p class="subtitle align-center">HH</p>
+            <label for="event_end_time">
+              <input type="time" name="event_end_time" id="event_end_time" required>
             </label>
           </div>
         </div>
-        <div class="col-4">
-          <div class="input-text">
-            <label for="event_end_time_minutes">
-              <input type="number" min="0" max="59" name="event_end_time_minutes" id="event_end_time_minutes" required>
-              <p class="subtitle align-center">MM</p>
-            </label>
-          </div>
-        </div>
-        <div class="col-4">
-          <div class="input-select">
-            <label for="event_end_time_ampm">
-              <select name="event_end_time_ampm" id="event_end_time_ampm">
-                <option value="am" selected>AM</option>
-                <option value="pm">PM</option>
-              </select>
-            </label>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-12"></div>
-
-    <div class="col-md-6">
-      <div class="input-text">
-        <label for="event_link">
-          <p class="title required">Link para inscrição/cadastro do evento</p>
-          <input type="text" name="event_link" id="event_link" required>
-        </label>
-      </div>
-    </div>
-
-    <div class="col-12"></div>
-
-    <div class="col-md-6">
-      <div class="input-text">
-        <label for="event_price">
-          <p class="title required">Taxas de inscrição/evento gratuito</p>
-          <input type="text" name="event_price" id="event_price" required>
-        </label>
       </div>
     </div>
 
     <div class="col-12"></div>
     
+    <div class="col-lg-3 col-sm-6">
+      <div class="input-radio">
+        <label for="event_price">
+          <input type="radio" name="event_price" id="event_price" value="free" required>
+          <p>EVENTO GRATUITO</p>
+        </label>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-sm-6 radio-and-text">
+      <div class="input-radio">
+        <label>
+          <input type="radio" name="event_price" value="paid" required>
+          <p>EVENTO PAGO</p>
+        </label>
+      </div>
+      <div class="input-text">
+        <p>Valor dos ingressos</p>
+        <label for="event_price_details">
+          <textarea name="event_price_details" id="event_price_details" cols="30" rows="10"></textarea>
+        </label>
+      </div>
+    </div>
+
+    <div class="col-12"></div>
+
+    <div class="col-md-6">
+      <div class="input-text">
+        <p class="title">LINK PARA ASSISTIR O EVENTO ONLINE</p>
+        <label for="event_link">
+          <input type="text" name="event_link" id="event_link">
+        </label>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="input-text">
+        <p class="title">ENDEREÇO PARA EVENTO PRESENCIAL</p>
+        <label for="event_local">
+          <input type="text" name="event_local" id="event_local">
+        </label>
+      </div>
+    </div>
+
+    <div class="col-12">
+      <div class="input-text">
+        <label for="event_registration_link">
+          <p class="title">LINK PARA SE CADASTRAR NO EVENTO</p>
+          <input type="text" name="event_registration_link" id="event_registration_link">
+        </label>
+      </div>
+    </div>
+
     <div class="col-12">
       <div class="input-text">
         <label for="event_organization_environment">
-          <p class="title required">Palestrantes, moderadores e programação do evento (você pode inserir o link para o programa) Consulte as regras para obter mais informações sobre nossas diretrizes de representação.</p>
+          <p class="title required">LISTA DE PALESTRANTES DO EVENTO.</p>
           <textarea name="event_organization_environment" id="event_organization_environment" required></textarea>
         </label>
       </div>
@@ -189,15 +177,24 @@ if (!defined('PATH')) exit;
     <div class="col-12">
       <div class="input-text">
         <label for="additional_comment">
-          <p class="title">Quaisquer informações adicionais</p>
+          <p class="title">INFORMAÇÕES GERAIS SOBRE O EVENTO</p>
           <textarea name="additional_comment" id="additional_comment"></textarea>
+        </label>
+      </div>
+    </div>
+
+    <div class="col-12 mb-4">
+      <div class="input-radio input-checkbox">
+        <label>
+          <input type="checkbox" required name="accept_terms">
+          <p>Li e estou de acordo com os <a href="<?= site_url() ?>/termos-e-regras" target="_blank">termos e regras</a></p>
         </label>
       </div>
     </div>
 
     <div class="col-12">
       <div class="input-submit">
-        <button type="submit">Submit</button>
+        <button type="submit" class="btn-site icon-right">ENVIAR EVENTO PARA O RJAW <i class="fas fa-arrow-right"></i></button>
       </div>
     </div>
 

@@ -1,0 +1,37 @@
+#cadastro.site-sections
+  form
+    background-color: rgba($branco, .08)
+    padding: 1rem
+    +breakpoint(sm)
+      padding: 40px
+    p
+      &.title
+        color: $verde-claro
+        +font-size(12px)
+        +breakpoint(xs)
+          +font-size(14px)
+        &.required
+          &:after
+            color: $branco
+
+    .input-radio
+      label
+        p
+          color: $verde-claro
+          +font-size(14px)
+      
+      &.input-checkbox
+        label
+          p
+            color: $branco
+            +font-size(14px)
+            font-weight: 400
+            a
+              font-weight: 700
+              color: $verde-claro
+              text-decoration: underline
+
+    .radio-and-text
+      .input-text
+        p
+          color: $branco
