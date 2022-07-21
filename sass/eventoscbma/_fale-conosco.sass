@@ -1,0 +1,29 @@
+#fale-conosco.site-sections
+  .editor-content
+    margin-top: 2rem
+    p
+      font-family: $font-default
+      &.align-center
+        color: $preto
+      &.info
+        color: $verde-escuro
+    ul
+      margin: 1rem 0 2rem
+      display: flex
+      flex-wrap: wrap
+      justify-content: center
+      align-items: center
+      flex-direction: column
+      +breakpoint(sm)
+        flex-direction: row
+      li
+        +breakpoint(sm)
+          margin-right: 10px
+          &:last-child
+            margin-right: 0
+        a
+          color: $verde-escuro
+          text-decoration: none
+          &:hover
+            text-decoration: underline
+      
