@@ -5,6 +5,7 @@ if (!defined('PATH')) exit;
 get_modules('Header', 'page/global');
 get_modules('Webdoor/content', 'page/home');
 get_modules('Sobre-nos/content', 'page/home');
+get_modules('Calendario-de-eventos/content', 'page/home');
 
 ?>
 
