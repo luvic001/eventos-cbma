@@ -70,10 +70,25 @@ aside.megamenu
               color: $cinza-botoes
               background-color: rgba($preto, .05)
 
-    p.language-switch
+    .language-switch
       padding: 0 15px
       a
         text-decoration: none
         color: $verde-escuro
         &.active
           font-weight: 700
+      
+      .trp-language-switcher
+        margin: 0
+        > div
+          padding: 0
+          border: 0
+          background-color: $transparent
+          +default_transition()
+          background-image: linear-gradient(45deg, transparent 50%, $verde-escuro 50%), linear-gradient(135deg, $verde-escuro 50%, transparent 50%)
+          background-position: 35px, 40px
+          &:hover
+            background-color: $branco
+            background-image: initial
+          a
+            +border-radius(0)

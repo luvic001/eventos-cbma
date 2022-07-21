@@ -12,7 +12,6 @@ if (!defined('PATH')) exit;
     <li><a href="<?= site_url() ?>#fale-conosco">FALE CONOSCO</a></li>
   </ul>
 </nav>
-<p class="language-switch">
-  <a href="<?= site_url() ?>" class="active">PT</a> |
-  <a href="<?= site_url() ?>/en">EN</a>
-</p>
+<div class="language-switch">
+  <?= do_shortcode('[language-switcher]') ?>
+</div>
