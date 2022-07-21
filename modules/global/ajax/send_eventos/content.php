@@ -79,7 +79,8 @@ $ins = $wpdb->insert('wp_eventos_cbma', [
   'event_price' => ($event_price !== 'paid') ? 'free' : 'paid',
   'event_price_details' => $event_price_details,
   'event_organization_environment' => $event_organization_environment,
-  'additional_comment' => $additional_comment
+  'additional_comment' => $additional_comment,
+  'INSERT_DATE' => date('Y-m-d H:i:s')
 ]);
 
 if (!$ins) {
