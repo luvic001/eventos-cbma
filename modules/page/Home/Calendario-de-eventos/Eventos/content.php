@@ -79,7 +79,8 @@ get_modules('Eventos/Lista-de-eventos', 'page/home/Calendario-de-eventos');
                             'start' => $evento['data_do_evento_inicial'].' '.$evento['horario_do_evento_inicial'],
                             'end' => $evento['data_do_evento_final'].' '.$evento['horario_do_evento_final'],
                             'name' => $evento['nome_do_evento'],
-                            'local' => $evento['local'] . ' ' . $evento['link_do_evento']
+                            'local' => $evento['local'] . ' ' . $evento['link_do_evento'],
+                            'details' => $evento['informacoes_adicionais']
                           ]));
                         
                         ?>
@@ -94,7 +95,7 @@ get_modules('Eventos/Lista-de-eventos', 'page/home/Calendario-de-eventos');
                               $evento['nome_do_evento'],
                               strtotime($evento['data_do_evento_inicial'].' '.$evento['horario_do_evento_inicial']),
                               strtotime($evento['data_do_evento_final'].' '.$evento['horario_do_evento_final']),
-                              '',
+                              $evento['informacoes_adicionais'],
                               strip_tags($evento['local']) . ' ' . $evento['link_do_evento']
                             ) 
                           ?>" 
