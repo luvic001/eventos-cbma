@@ -14,7 +14,7 @@ if (!defined('PATH')) exit;
     <div class="row justify-content-end">
       <div class="col-md-6">
         <div class="section-title">
-          <h2>SOBRE O RIO ARTITRATION WEEK</h2>
+          <h2>SOBRE O RIO ARBITRATION WEEK</h2>
         </div>
         <div class="editor-content">
           <p>A Rio de Janeiro Arbitration Week (RJAW) é um evento colaborativo promovido por acadêmicos, provedores de ADR, escritórios de advocacia e associações com o objetivo de promover a cultura de ADR nacional e internacionalmente.</p>
