@@ -24,8 +24,8 @@ if (!defined('PATH')) exit;
           </p>
 
           <div class="webdoor-links">
-            <a href="#" class="btn-site white-button icon-left"><i class="fas fa-calendar-alt"></i>CALENDÁRIO DE EVENTOS</a>
-            <a href="#" class="btn-site transparent-button icon-left"><i class="fas fa-check-square"></i>INSCREVA SEU EVENTO</a>
+            <a href="#confira-o-calendario-de-eventos" class="btn-site white-button icon-left"><i class="fas fa-calendar-alt"></i>CALENDÁRIO DE EVENTOS</a>
+            <a href="#cadastro" class="btn-site transparent-button icon-left"><i class="fas fa-check-square"></i>INSCREVA SEU EVENTO</a>
           </div>
 
         </div>
@@ -35,7 +35,7 @@ if (!defined('PATH')) exit;
 
   </div>
 
-  <a href="#" class="scrolldown">
+  <a href="#sobre-o-rio-arbitration-week" class="scrolldown">
     <?= svg('scroll-down') ?>
   </a>
 
