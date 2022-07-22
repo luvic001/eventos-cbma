@@ -13,7 +13,9 @@ get_modules('Header-megamenu', 'page/global');
       <div class="col-xl-3 col-10">
         <div class="site-logo">
           <a href="<?= site_url() ?>" class="no-decoration" title="RJAW | RIO ARBITRATION WEEK">
-            <h1><b>RJ</b>AW | RIO ARBITRATION WEEK</h1>
+            <h1>
+              <img src="<?= get_image('logo-site-rjaw.png') ?>" alt="RJAW | Rio Arbitration Week">
+            </h1>
           </a>
         </div>
       </div>
