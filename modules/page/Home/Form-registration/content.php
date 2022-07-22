@@ -168,7 +168,7 @@ if (!defined('PATH')) exit;
     <div class="col-12">
       <div class="input-text">
         <label for="event_organization_environment">
-          <p class="title required">LISTA DE PALESTRANTES DO EVENTO.</p>
+          <p class="title required">LISTA DE PALESTRANTES DO EVENTO</p>
           <textarea name="event_organization_environment" id="event_organization_environment" required></textarea>
         </label>
       </div>
