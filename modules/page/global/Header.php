@@ -14,7 +14,7 @@ get_modules('Header-megamenu', 'page/global');
         <div class="site-logo">
           <a href="<?= site_url() ?>" class="no-decoration" title="RJAW | RIO ARBITRATION WEEK">
             <h1>
-              <img src="<?= get_image('logo-site-rjaw.png') ?>" alt="RJAW | Rio Arbitration Week">
+              <b>RJ</b>AW | RIO ARBITRATION WEEK
             </h1>
           </a>
         </div>
