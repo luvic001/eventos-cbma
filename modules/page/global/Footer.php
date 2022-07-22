@@ -21,27 +21,22 @@ if (!defined('PATH')) exit;
       <div class="redes-sociais info-footer">
         <ul>
           <li>
-            <a href="#" target="_blank">
+            <a href="https://www.facebook.com/cbma.oficial" title="Facebook | CBMA" target="_blank">
               <i class="fab fa-2x fa-facebook-square"></i>
             </a>
           </li>
           <li>
-            <a href="#" target="_blank">
+            <a href="https://www.instagram.com/cbma.oficial/" title="Instagram | CBMA" target="_blank">
               <i class="fab fa-2x fa-instagram"></i>
             </a>
           </li>
           <li>
-            <a href="#" target="_blank">
+            <a href="https://www.linkedin.com/company/cbma-centro-brasileiro-de-media%C3%A7%C3%A3o-e-arbitragem/" title="LinkedIn CBMA" target="_blank">
               <i class="fab fa-2x fa-linkedin-in"></i>
             </a>
           </li>
           <li>
-            <a href="#" target="_blank">
-              <i class="fab fa-2x fa-twitter"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#" target="_blank">
+            <a href="https://www.youtube.com/c/CBMAoficial" title="YouTube | CBMA" target="_blank">
               <i class="fab fa-2x fa-youtube"></i>
             </a>
           </li>
