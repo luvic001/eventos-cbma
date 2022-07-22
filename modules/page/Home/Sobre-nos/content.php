@@ -22,7 +22,7 @@ if (!defined('PATH')) exit;
           <p>O Rio de Janeiro é a porta de entrada do Brasil. Sendo assim, é um polo de negócios e discussões de alto nível.</p>
           <p>A RJAW tem como missão permitir que qualquer pessoa ou entidade envie sua proposta de evento bem como ser um ponto de encontro para a Comunidade de ADR de todo o mundo.</p>
           <p>Todos convidados. Bem-vindos ao Rio!</p>
-          <a href="#" class="btn-site icon-right mt-5">
+          <a href="#cadastro" class="btn-site icon-right mt-5">
             INSCREVA O SEU EVENTO
             <i class="fas fa-arrow-right"></i>
           </a>

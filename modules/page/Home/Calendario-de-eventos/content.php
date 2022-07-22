@@ -11,7 +11,7 @@ if (!defined('PATH')) exit;
       <h2>CONFIRA O CALENDÁRIO DE EVENTOS</h2>
     </div>
     
-    <?php get_modules('Calendario-de-eventos/Eventos/content', 'page/home'); ?>
+    <?php get_modules('Calendario-de-eventos/Eventos/content', 'page/Home'); ?>
 
     <div class="editor-content">
       <p class="disclaimer">Em caso de dúvidas, envie um e-mail para <a href="mailto:eventos@cbma.com.br" title="Enviar e-mail">eventos@cbma.com.br</a></p>

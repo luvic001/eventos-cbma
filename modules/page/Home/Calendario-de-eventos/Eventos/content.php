@@ -2,7 +2,7 @@
 
 if (!defined('PATH')) exit;
 global $eventos;
-get_modules('Eventos/Lista-de-eventos', 'page/home/Calendario-de-eventos');
+get_modules('Eventos/Lista-de-eventos', 'page/Home/Calendario-de-eventos');
 
 ?>
 
