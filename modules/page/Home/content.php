@@ -24,4 +24,5 @@ get_modules('Calendario-de-eventos/content', 'page/Home');
 <?php
 
 get_modules('Fale-conosco/content', 'page/Home');
+get_modules('Apoiadoras/content', 'page/Home');
 get_modules('Footer', 'page/global');
