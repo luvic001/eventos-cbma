@@ -8,7 +8,7 @@ if (!defined('PATH')) exit;
 
   <div class="container-fluid">
     <div class="site-logo">
-      <a href="http://2022.congressodearbitragem.cbma.local.com.br" class="no-decoration" title="RJAW | RIO ARBITRATION WEEK">
+      <a href="<?= site_url() ?>" class="no-decoration" title="RJAW | RIO ARBITRATION WEEK">
         <h2>
           <img src="<?= get_image('logo-site-rjaw.png') ?>" alt="RJAW | Rio Arbitration Week">
         </h2>
