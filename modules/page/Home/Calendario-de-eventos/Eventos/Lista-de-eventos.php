@@ -119,6 +119,18 @@ $eventos = [
     [
       'nome_do_evento' => 'Congresso Internacional CBMA de Arbitragem',
       'data_do_evento_inicial' => '2022-08-11', 
+      'data_do_evento_final' => '2022-08-11', 
+      'horario_do_evento_inicial' => '00:00:00',
+      'horario_do_evento_final' => '23:59:59',
+      'local' => 'Museu do Amanhã <br/> Praça Mauá, nº 1, Centro',
+      'link_do_evento' => false,
+      'link_do_cadastro' => false,
+      'informacoes_adicionais' => 'O dia todo',
+      'precos' => false
+    ],
+    [
+      'nome_do_evento' => 'Congresso Internacional CBMA de Arbitragem',
+      'data_do_evento_inicial' => '2022-08-12', 
       'data_do_evento_final' => '2022-08-12', 
       'horario_do_evento_inicial' => '00:00:00',
       'horario_do_evento_final' => '23:59:59',
