@@ -40,7 +40,7 @@ get_modules('Eventos/Lista-de-eventos', 'page/Home/Calendario-de-eventos');
                         <?= $evento['local'] ? '<br/><b>Local</b> <br/> ' . $evento['local'] : null ?>
                         <?= 
                           $evento['link_do_cadastro'] ? 
-                          sprintf('<br/></br> <a href="%s" target="_blank" title="Cadastre-se no evento">Cadastre-se neste evento</a>', $evento['link_do_cadastro']) : 
+                          sprintf('<br/></br> <a href="%s" target="_blank" title="Inscreva-se neste evento">Inscreva-se neste evento</a>', $evento['link_do_cadastro']) : 
                           null 
                         ?>
                         <?= $evento['informacoes_adicionais'] ? '<br/></br><b>Informações adicionais</b><br/>' . $evento['informacoes_adicionais']  : null ?>

@@ -112,7 +112,7 @@ $eventos = [
       'horario_do_evento_final' => '23:00:00',
       'local' => 'CBMA <br/> Rua da Candelária, 9/803',
       'link_do_evento' => false,
-      'link_do_cadastro' => false,
+      'link_do_cadastro' => 'https://cparbitragem.com.br/cisg-tempos-de-crise/',
       'informacoes_adicionais' => false,
       'precos' => false
     ],
